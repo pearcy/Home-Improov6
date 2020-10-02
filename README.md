@@ -8,8 +8,6 @@
   
 </h2>
 
-
-
 ### Home Improov v5.0
 _Users will be able to create a project and add a list of Tools & Materials for said project._
 
@@ -97,9 +95,20 @@ _The MVP focuses on the WWW version of the app which will include full CRUD func
 * Akeneo PIM (database for tools and material lists)
 * API calls to pull in article content (from Ghost CMS) and tools & material list from database (Akeneo)
 
-
-
 </br >
+
+##### Development Notes
+* Not able to make Gatsby Content API work with my site due to environmental errors (spent 2 hours troubleshooting, re-installing, etc.)
+* Installed repo on Netlifly as a workaround to my local enviromental errors. I can work locally, push to Github and Netlify will auto-update.  
+    ```shell
+     ⚠ pngquant pre-build test failed
+  ℹ compiling from source
+  ✖ Error: pngquant failed to build, make sure that libpng is installed
+    ```
+* 
+
+
+
 </br >
 
 ## Quick start
