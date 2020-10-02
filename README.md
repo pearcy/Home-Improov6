@@ -99,13 +99,23 @@ _The MVP focuses on the WWW version of the app which will include full CRUD func
 
 ##### Development Notes
 * Not able to make Gatsby Content API work with my site due to environmental errors (spent 2 hours troubleshooting, re-installing, etc.)
-* Installed repo on Netlifly as a workaround to my local enviromental errors. I can work locally, push to Github and Netlify will auto-update.  
-    ```shell
+
+  ```shell
      ⚠ pngquant pre-build test failed
   ℹ compiling from source
   ✖ Error: pngquant failed to build, make sure that libpng is installed
     ```
-* 
+* Installed repo on Netlifly as a workaround to my local enviromental errors. I can work locally, push to Github and Netlify will auto-update.  
+
+* Remove Sharp related code to see if I can eliminate error.  Need to run locally to test API. 
+
+* Fixed local site issue - site now run locally @ 4:13pm
+
+* Test to see if Gatsby API works on my published site - www.homeimproov.com
+  
+* Refactor starter site to include my prior code base
+
+
 
 
 
