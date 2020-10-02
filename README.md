@@ -1,110 +1,129 @@
-# Gatsby Starter Ghost
 
-A starter template to build lightning fast websites with [Ghost](https://ghost.org) & [Gatsby](https://gatsbyjs.org)
-
-**Demo:** https://gatsby.ghost.org
-
-&nbsp;
-
-![gatsby-starter-ghost](https://user-images.githubusercontent.com/120485/50913567-8ab8e380-142c-11e9-9e78-de02ded12fc6.jpg)
-
-&nbsp;
+<p align="center">
+  <a href="https://homeimproov.com">
+    <img alt="Home Improov" src="content/assets/home.improov-logo-300.png" width="200" />
+  </a>
+</p>
+<h2 align="center">
+  
+</h2>
 
 
-# Installing
 
-```bash
-# With Gatsby CLI
-gatsby new gatsby-starter-ghost https://github.com/TryGhost/gatsby-starter-ghost.git
-```
+### Home Improov v5.0
+_Users will be able to create a project and add a list of Tools & Materials for said project._
 
-```bash
-# From Source
-git clone https://github.com/TryGhost/gatsby-starter-ghost.git
-cd gatsby-starter-ghost
-```
+#### Joseph Pearce
 
-Then install dependencies
 
-```bash
-yarn
-```
+## Project Considerations
 
-&nbsp;
 
-# Running
+_Research React Frameworks.  Although I will start with a MVP, my project will require a certain level of complexity that will benefit from a framework.  Based on these two articles I chose to use Gatsby but I may need to consider Next.js if the site grows significantly in page or user count._
 
-Start the development server. You now have a Gatsby site pulling content from headless Ghost.
 
-```bash
-gatsby develop
-```
+_[Next.js vs. GatsbyJS: A developer’s perspective](https://blog.logrocket.com/next-js-vs-gatsbyjs-a-developers-perspective/)_
 
-By default, the starter will populate content from a default Ghost install located at https://gatsby.ghost.io.
+ _[Gatsby vs Next.JS - What, Why and When?](https://dev.to/jameesy/gatsby-vs-next-js-what-why-and-when-4al5)_
 
-To use your own install, you will need to edit the `.ghost.json` config file with your credentials. Change the `apiUrl` value to the URL of your Ghost site. For Ghost(Pro) customers, this is the Ghost URL ending in `.ghost.io`, and for people using the self-hosted version of Ghost, it's the same URL used to access your site.
+ _Gatsby is a React framework that can work in a hybrid fashion - serve a static and also re-hydrates the React on the page on the client side. This will fit my use case because Home Improov will include both static and dynamic pages.  Gatsby can feed the site content and list items via an API._
 
-Next, update the `contentApiKey` value to a key associated with the Ghost site. A key can be provided by creating an integration within Ghost Admin. Navigate to Integrations and click "Add new integration". Name the integration appropriately and click create.
+<br />
+<br />
+    
+## Overall Scope of Project
 
-Finally, configure your desired URL in `siteConfig.js`, so links (e. g. canonical links) are generated correctly. You can also update other default values, such as `postsPerPage` in this file.
+_Home Improov will allow users to source the best of DIY home improvement articles.  It will serve as an aggregator by selectively sourcing the best how to articles.  In order to facilitate this feature a Ghost CMS will be used for editors to input the articles.  The article content will then be pushed to the Home Improov React app via an API.  Each article will include a Tools & Materials list which will be managed in an Akeneo PIM database and populated in the app via an API. The user will be able to automagically add the Tools & Materials list as a new Project by selecting an "Add To Projects" button._ 
 
-To use this starter without issues, your Ghost installation needs to be at least on version `2.10.0`.
 
-The default Ghost version that is used for this starter is `3.x`. If your Ghost installation is on a lower version, you will need to pass in a `version` property in your `.ghost.json` settings:
+<img src="content/assets/HomeImproov-Overview.png" />
 
-**Ghost >=2.10.0 <3.0.0**
-```json
-{
-    "apiUrl": "https://gatsby.ghost.io",
-    "contentApiKey": "9cc5c67c358edfdd81455149d0",
-    "version": "v2"
-}
-```
+<br />
+<br />
 
-**Ghost <=3.0.0**
-```json
-{
-    "apiUrl": "https://gatsby.ghost.io",
-    "contentApiKey": "9cc5c67c358edfdd81455149d0"
-}
-```
+## MVP Wireframe
 
-&nbsp;
+_The MVP focuses on the WWW version of the app which will include full CRUD functionality_
 
-# Deploying with Netlify
+## User Stories 
 
-The starter contains three config files specifically for deploying with Netlify. A `netlify.toml` file for build settings, a `/static/_headers` file with default security headers set for all routes, and `/static/_redirects` to set Netlify custom domain redirects.
+* User can read a list of projects
+* User can add a project
+* User can mark any project as completed
+* User can delete any project
+* User can edit any project
+* User view a specific subset of projects: All projects, only the active project, or only the completed projects
+* User can add Tools to a Project
+* The tools list will have full CRUD functionality
+* User can add Materials to a Project
+* The materials list will have full CRUD functionality
 
-To deploy to your Netlify account, hit the button below.
+<img src="content/assets/HomeImproov-Component.png" />
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/TryGhost/gatsby-starter-ghost)
 
-Content API Keys are generally not considered to be sensitive information, they exist so that they can be changed in the event of abuse; so most people commit it directly to their `.ghost.json` config file. If you prefer to keep this information out of your repository you can remove this config and set [Netlify ENV variables](https://www.netlify.com/docs/continuous-deployment/#build-environment-variables) for production builds instead.
+## Component Diagram
 
-Once deployed, you can set up a [Ghost + Netlify Integration](https://docs.ghost.org/integrations/netlify/) to use deploy hooks from Ghost to trigger Netlify rebuilds. That way, any time data changes in Ghost, your site will rebuild on Netlify.
+<img src="content/assets/HomeImproov-Component2.png" />
 
-&nbsp;
 
-# Optimising
+<br />
+<br />
 
-You can disable the default Ghost Handlebars Theme front-end by enabling the `Make this site private` flag within your Ghost settings. This enables password protection in front of the Ghost install and sets `<meta name="robots" content="noindex" />` so your Gatsby front-end becomes the source of truth for SEO.
+## Project Proposal
 
-&nbsp;
+##### List the absolute minimum features the project requires to meet this purpose or goal: 
+* User can read a list of projects
+* User can add a project
+* User can mark any project as completed
+* User can delete any project
+* User can edit any project
+* User view a specific subset of projects: All projects, only the active project, or only the completed projects
 
-# Extra options
+##### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? 
+* React
+* Gatsby
+* HTML
+* Tailwinds CSS
+* Styled Components
+* JavaScript
 
-```bash
-# Run a production build, locally
-gatsby build
+##### If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
+* Add articles - using Ghost CMS, feed content into the Home Improov application via an API
+* Add a Tools & Materials list for each article. 
+* Enable user to auto-add Tools & Materials list from articles
 
-# Serve a production build, locally
-gatsby serve
-```
+##### What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
+* Ghost CMS (as headless CMS)
+* Akeneo PIM (database for tools and material lists)
+* API calls to pull in article content (from Ghost CMS) and tools & material list from database (Akeneo)
 
-Gatsby `develop` uses the `development` config in `.ghost.json` - while Gatsby `build` uses the `production` config.
 
-&nbsp;
 
-# Copyright & License
+</br >
+</br >
 
-Copyright (c) 2013-2020 Ghost Foundation - Released under the [MIT license](LICENSE).
+## Quick start
+
+1.  **Download.**
+
+    Use terminal to clone repo 
+
+    ```shell
+    # Clone the repo
+    Home Improov https://github.com/pearcy/Home-Improov2
+    ```
+
+1.  **Install**
+
+    Navigate into your new site’s directory and start it up.
+
+    ```shell
+    cd your folder name/
+    gatsby develop
+    ```
+
+1.  **Open the source code and enjoy!**
+
+    Your site is now running at `http://localhost:8000`
+
+
