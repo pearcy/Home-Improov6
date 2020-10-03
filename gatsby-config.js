@@ -3,6 +3,10 @@ const path = require(`path`)
 const config = require(`./src/utils/siteConfig`)
 const generateRSSFeed = require(`./src/utils/rss/generate-feed`)
 
+// require("dotenv").config({
+//     path: `.env.${process.env.NODE_ENV}`,
+//   })
+
 let ghostConfig
 
 try {
@@ -65,6 +69,7 @@ module.exports = {
                     ? ghostConfig.development
                     : ghostConfig.production,
         },
+
         /**
          *  Utility Plugins
          */
