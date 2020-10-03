@@ -1,6 +1,6 @@
 module.exports = {
-    // siteUrl: `http://localhost:8000`, // Site domain. Do not include a trailing slash!
-    siteUrl: `https://loving-chandrasekhar-9b3cdb.netlify.app`,
+    siteUrl: `http://localhost:8000`, // Site domain. Do not include a trailing slash!
+    // siteUrl: `https://loving-chandrasekhar-9b3cdb.netlify.app`,
    
 
     postsPerPage: 10, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
