@@ -98,10 +98,38 @@ _The MVP focuses on the WWW version of the app which will include full CRUD func
 </br >
 
 ##### Development Notes
+
+###### Repo commit history & notes:
+
+* 1st repo - Friday, Sep 25 @ 8:34am (2 commits)
+- Needed to configure a new environment 
+https://github.com/pearcy/Home-Improov1.git 
+
+* 2nd repo - Friday, Sep 25 @ 9:12am to 3:17pm (18 commits)
+https://github.com/pearcy/Home-Improov2.git
+
+* 3rd repo - Friday, Sep 25 (11 commits)
+https://github.com/pearcy/Home-Improov3.git
+
+- Friday, Sep 25 @ 3:13pm to 4:55pm 
+- Saturday, Sep 26 @ 10:01am to 11:14am 
+- Sunday, Sep 27 @ 9:24am to 3:12pm 
+
+* 4th repo - ** same as v3 **
+https://github.com/pearcy/Home-Improov4.git
+
+* 5th repo - Friday, Oct 2 @ 7:26am to 12:25 pm (10 commits)
+https://github.com/pearcy/Home-Improov5.git
+
+* 6th repo - Friday, Oct 2 @ 2:34pm to 5:07pm pm (7 commits)
+https://github.com/pearcy/Home-Improov5.git
+
+- Friday, Oct 2 Notes
+
 * Not able to make Gatsby Content API work with my site due to environmental errors (spent 2 hours troubleshooting, re-installing, etc.)
 
   ```shell
-     ⚠ pngquant pre-build test failed
+  ⚠ pngquant pre-build test failed
   ℹ compiling from source
   ✖ Error: pngquant failed to build, make sure that libpng is installed
     ```
@@ -109,14 +137,13 @@ _The MVP focuses on the WWW version of the app which will include full CRUD func
 
 * Remove Sharp related code to see if I can eliminate error.  Need to run locally to test API. 
 
-* Fixed local site issue - site now run locally @ 4:13pm
+* Fixed local site issue - site now runs locally @ 4:13pm (commented out "image" related code)
 
 * Test to see if Gatsby API works on my published site - www.homeimproov.com
+- Gatsby API working for test Ghost CMS
+- 
   
 * Refactor starter site to include my prior code base
-
-
-
 
 
 </br >
