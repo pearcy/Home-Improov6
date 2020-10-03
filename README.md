@@ -126,7 +126,7 @@ https://github.com/pearcy/Home-Improov5.git
 
 - Friday, Oct 2 Notes
 
-* Not able to make Gatsby Content API work with my site due to environmental errors (spent 2 hours troubleshooting, re-installing, etc.)
+* Not able to get Gatsby Content API to work with my site due to environmental errors (spent 2 hours troubleshooting, re-installing, etc.)
 
   ```shell
   ⚠ pngquant pre-build test failed
@@ -135,9 +135,9 @@ https://github.com/pearcy/Home-Improov5.git
     ```
 * Installed repo on Netlifly as a workaround to my local enviromental errors. I can work locally, push to Github and Netlify will auto-update.  
 
-* Remove Sharp related code to see if I can eliminate error.  Need to run locally to test API. 
+* Remove Sharp related code to see if I can eliminate error.  Need to remove eror so I can run locally to test API. 
 
-* Fixed local site issue - site now runs locally @ 4:13pm (commented out "image" related code)
+* Fixed local site issue - site now runs locally @ 4:13pm (commented out sharp "image" related code)
 
 * Test to see if Gatsby API works on my published site - www.homeimproov.com
 - Gatsby API working for test Ghost CMS
@@ -147,29 +147,5 @@ https://github.com/pearcy/Home-Improov5.git
 
 
 </br >
-
-## Quick start
-
-1.  **Download.**
-
-    Use terminal to clone repo 
-
-    ```shell
-    # Clone the repo
-    Home Improov https://github.com/pearcy/Home-Improov2
-    ```
-
-1.  **Install**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd your folder name/
-    gatsby develop
-    ```
-
-1.  **Open the source code and enjoy!**
-
-    Your site is now running at `http://localhost:8000`
 
 
